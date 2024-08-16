@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Roberts CV</title>
+  <style>
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: right; }
+  .item5 { grid-area: footer; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .site_list{
+    display: grid;
+  }
+ 
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <h1>🐙 Ahmed Roberts 🐂</h1>
+    <ul class="site_list">
+      <l1><a href="https://ahmedroberts.com/" target="_blank">Project 1 - https://ahmedroberts.com/.</a></l1>
+      <l1><a href="https://www.apogeeaor.com/" target="_blank">Project 2 - https://www.apogeeaor.com/.</a></l1>
+      <l1><a href="https://cloudvillage.io/" target="_blank">Project 3 - https://cloudvillage.io/.</a></l1>
+      <l1><a href="https://pushonehappythought.org/" target="_blank">Project 4 - https://pushonehappythought.org/.</a></l1>
+      <l1><a href="https://melanatedmetas.com/" target="_blank">Project 5 - https://melanatedmetas.com/.</a></l1>
+    </ul>
+    <p>Please enjoy my site. 🤖</p>
+    <h1>Grid Layout</h1>
+
+    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design
+      web pages without having to use floats and positioning:</p>
+
+    <div class="grid-container">
+      <div class="item1">Header</div>
+      <div class="item2">Menu</div>
+      <div class="item3">Main</div>
+      <div class="item4">Right</div>
+      <div class="item5">Footer</div>
+    </div>
+
+  </main>
+  <footer></footer>
+
+</body>
+
+</html>
